@@ -456,7 +456,7 @@ function gatherNames(node: ast.SyntaxNode | ast.SyntaxNode[]): NameSet {
       ...ast
         .walk(node)
         .filter(e => e.type == ast.NAME)
-        .map((e: ast.Name): [string, ast.SyntaxNode] => [e.id, e])
+        .map((e: any): [string, ast.SyntaxNode] => [e.id, e])
     );
   }
 }
