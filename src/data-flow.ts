@@ -472,9 +472,9 @@ abstract class AnalysisWalker implements ast.WalkListener {
 
 function runAnalysis(
   Analysis: new (
-    statement: ast.SyntaxNode,
-    symbolTable: SymbolTable,
-    defsForMethodResolution: RefSet
+    statement: any,
+    symbolTable: any,
+    defsForMethodResolution: any
   ) => AnalysisWalker,
   defsForMethodResolution: RefSet,
   statement: ast.SyntaxNode,
